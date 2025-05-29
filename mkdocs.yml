@@ -3,11 +3,16 @@ site_url: https://docs.farmlan.ca
 site_description: Source of truth for all things documentation about FarmLan
 repo_name: farmlan/docs.farmlan.ca
 repo_url: https://github.com/farmlan/docs.farmlan.ca
+remote_name: origin
 remote_branch: gh-pages
 copyright: Copyright &copy; 2025 FarmLan
+edit_uri: edit/main/docs/
 
 theme:
   name: material
+
+  # For base theme changes
+  custom_dir: overrides
 
   palette:
 
@@ -36,6 +41,8 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+
+  # Features that are enabled        
   features:
     - navigation.instant
     - navigation.instant.progress
@@ -49,6 +56,7 @@ theme:
     - header.autohide
     - navigation.footer
     - content.action.edit
+    - content.action.view
 
 plugins:
   - search:
@@ -80,6 +88,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+  
 
   # Python Markdown Extensions
   - pymdownx.arithmatex:
@@ -96,6 +105,9 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
