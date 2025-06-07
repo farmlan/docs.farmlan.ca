@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.farmlan.ca/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-06-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.farmlan.ca/tech-stack-analysis/Reproducibility/</loc>
+         <lastmod>2025-06-07</lastmod>
     </url>
 </urlset>
